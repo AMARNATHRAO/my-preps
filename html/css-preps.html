@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Preps</title>
+    <style>
+        section p {
+            color: red;
+        }
+
+        section+p {
+            color: blue;
+        }
+
+        .example {
+            color: yellow;
+        }
+
+        ul li a {
+            color: blue;
+        }
+
+        ul a {
+            color: green;
+        }
+
+        a {
+            color: red;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        p::first-letter {
+            color: green;
+        }
+
+        /* General sibling */
+        h2~p {
+            color: skyblue;
+        }
+
+        /* Adjacent sibling */
+        h2+p {
+            background: beige;
+        }
+
+        li:nth-child(2n+1) {
+            margin: 0 5 px;
+            background-color: yellow;
+        }
+
+        p:first-of-type {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .container {
+            color: yellow;
+        }
+
+        p:first-child {
+            color: green;
+        }
+
+        #input1::placeholder {
+            color: red;
+        }
+
+        article h2 {
+            color: blue;
+        }
+
+        article>h2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<input>
+<section>
+    <p>paragraph one</p>
+    <p>paragraph one one</p>
+</section>
+<p>paragraph two</p>
+
+
+<ul>
+    <li><a href="#" class="example">link 1</a></li>
+    <li><a href="#">list item 2</a></li>
+    <li>list item 3</li>
+    <li>list item 4</li>
+    <li>list item 5</li>
+    <li>list item 6</li>
+    <li>list item 7</li>
+    <li>list item 8</li>
+    <li>list item 9</li>
+    <li>list item 10</li>
+    <li>list item 11</li>
+    <li>list item 12</li>
+    <a>list item 13</a>
+    <a>list item 14</a>
+    <a>list item 15</a>
+
+</ul>
+
+<div style="margin-bottom: 2rem;">Div 1</div>
+<div style="margin-top: 2rem;">Div 2</div>
+
+<section>
+    <p>paragraph 1</p>
+    <h2>Heading</h2>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+</section>
+
+<div style="display: none;">Display None</div>
+<div style="visibility: hidden;">Visibility None</div>
+
+<!-- <div>
+        <div style="width: 300px;height: 100px;background-color: red;position: absolute;padding: 10px;"> Some DIV</div>
+    </div> -->
+
+<div class="container">
+    <h1>Heading 1</h1>
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+</div>
+
+<input id="input1" placeholder="name" />
+
+<article>
+    <h2>Paragraph 1</h2>
+
+    <aside>
+        <h2>Paragraph 2</h2>
+    </aside>
+</article>
+
+</body>
+
+</html>
